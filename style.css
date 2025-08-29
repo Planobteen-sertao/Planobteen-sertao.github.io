@@ -1,0 +1,78 @@
+/* --- IMPORTAÇÃO DAS FONTES --- */
+/* Os ficheiros de fonte devem estar numa pasta chamada 'fonts' ao lado do seu index.html */
+/* É uma boa prática renomear 'Gobold-Bold-BF63bf583a33e1b.otf' para 'gobold-bold.otf' */
+
+@font-face {
+    font-family: 'Monument Extended';
+    src: url('fonts/MonumentExtended-Regular.otf') format('opentype');
+    font-weight: 400; /* Peso 'normal' */
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Monument Extended';
+    src: url('fonts/MonumentExtended-Ultrabold.otf') format('opentype');
+    font-weight: 800; /* Peso 'extrabold' ou 'ultrabold' */
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gobold';
+    src: url('fonts/Gobold-Bold-BF63bf583a33e1b.otf') format('opentype');
+    font-weight: 700; /* Peso 'bold' */
+    font-style: normal;
+}
+
+/* --- APLICAÇÃO DAS FONTES --- */
+body {
+    font-family: 'Inter', sans-serif; /* Fonte padrão para textos corridos */
+}
+
+/* Fonte para títulos. A classe 'font-extrabold' do Tailwind (peso 800)
+   irá automaticamente selecionar a versão Ultrabold da fonte. */
+.font-monument {
+    font-family: 'Monument Extended', sans-serif;
+}
+
+/* Fonte para botões e destaques. A classe 'font-bold' do Tailwind (peso 700)
+   irá automaticamente selecionar a versão Bold da fonte. */
+.font-gobold {
+    font-family: 'Gobold', sans-serif;
+    letter-spacing: 0.5px;
+}
+
+/* Cores personalizadas do ministério */
+.bg-pbt-purple { background-color: #6c47d8; }
+.text-pbt-purple { color: #6c47d8; }
+.border-pbt-purple { border-color: #6c47d8; }
+.hover\:bg-pbt-purple-dark:hover { background-color: #5a3ec8; } /* Tom mais escuro para hover */
+.bg-pbt-purple-light { background-color: #f5f3ff; } /* Tom lilás claro para fundos */
+
+.bg-pbt-green { background-color: #a8d42a; }
+.text-pbt-green { color: #a8d42a; }
+.border-pbt-green { border-color: #a8d42a; }
+.hover\:bg-pbt-green-dark:hover { background-color: #92b825; }
+
+/* Efeito de scroll suave */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Estilização do modal */
+.modal-overlay {
+    transition: opacity 0.3s ease;
+}
+.modal-content {
+    transition: transform 0.3s ease;
+}
+
+/* Estilos para os logos do rodapé */
+.logo1 img {
+    height: 2.5rem; /* 40px */
+}
+.logo2 img {
+    height: 5.5rem/* 40px */
+}
+.logo3 img {
+    height: 3.5rem; /* 56px */
+}

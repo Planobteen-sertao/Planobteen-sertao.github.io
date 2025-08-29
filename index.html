@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adote um Adolescente do Sertão - ACAMP PBT 2025</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Link para o seu ficheiro CSS -->
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <!-- Cabeçalho -->
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <nav class="container mx-auto px-6 py-2 flex justify-between items-center">
+            <!-- LOGO AQUI: Adicionamos a classe 'transform -translate-y-2' para subir a imagem -->
+            <img src="media/PBT Logo Acamp_04.png" alt="Logo Acamp PBT 2025" class="h-20 -mb-4 relative transform -translate-y-2">
+            
+            <div class="flex items-center space-x-4">
+                <a href="#doar" class="bg-pbt-green text-white font-bold py-2 px-4 rounded-lg hover:bg-pbt-green-dark transition-colors duration-300 font-gobold" data-lang-key="donate_button">Quero Ajudar</a>
+                <button id="lang-switcher" class="font-gobold text-gray-600 border border-gray-300 px-3 py-1 rounded-md">EN</button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- 1. Seção Principal (Hero) -->
+        <section class="bg-white">
+            <!-- Padding ajustado para a nova posição da logo -->
+            <div class="container mx-auto px-6 pt-12 pb-16 md:pt-20 md:pb-24 text-center">
+                <h1 class="text-4xl md:text-6xl font-extrabold text-pbt-purple leading-tight font-monument uppercase" data-lang-key="hero_title">
+                    Adote um Adolescente do Sertão
+                </h1>
+                <p class="mt-4 text-lg md:text-xl text-gray-600 max-w-3xl mx-auto" data-lang-key="hero_subtitle">
+                    Ajude-nos a levar mais de 15 jovens para o Acamp PBT 2025. Uma experiência de fé, comunhão e transformação de vidas.
+                </p>
+                <a href="#doar" class="mt-8 inline-block bg-pbt-purple text-white font-bold text-lg py-4 px-8 rounded-lg hover:bg-pbt-purple-dark transition-all duration-300 transform hover:scale-105 font-gobold" data-lang-key="hero_cta">
+                    FAÇA PARTE DESTA MISSÃO
+                </a>
+            </div>
+        </section>
+
+        <!-- 2. Nossa Missão no Sertão -->
+        <section class="container mx-auto px-6 py-16 md:py-20">
+            <div class="max-w-4xl mx-auto text-center">
+                <h2 class="text-3xl md:text-4xl font-extrabold text-gray-800 font-monument uppercase" data-lang-key="mission_title">Nossa Missão no Sertão</h2>
+                <p class="mt-4 text-lg text-gray-600" data-lang-key="mission_p1">
+                   O sertão nordestino é o nosso campo missionário. Uma terra de gente forte, mas que representa um dos maiores desafios de evangelismo do Brasil. E nós estamos lá. Acreditamos que <span class="font-bold">há Deus no sertão</span> e, por isso, nossos corações estão dispostos a servir nossos amados irmãos.
+                </p>
+                <p class="mt-4 text-lg text-gray-600" data-lang-key="mission_p2">
+                   Pensando nos nossos adolescentes que vivem essa realidade, o <span class="font-bold text-pbt-purple font-gobold">Plano B Teen</span> criou a campanha <span class="font-bold text-pbt-green font-gobold">"Adote um Adolescente do Sertão"</span>. Nosso objetivo é um só: abençoá-los e sermos abençoados por eles, trazendo-os para o <span class="font-bold font-gobold">ACAMP PBT 2025</span>, de 19 a 23 de Novembro.
+                </p>
+                <p class="mt-4 text-lg text-gray-600" data-lang-key="mission_p3">
+                    Esta campanha levantará as ofertas para custear a viagem e a inscrição de cada um deles. Mais do que uma viagem, é a chance de serem fortalecidos na fé e renovados em Cristo. Junte-se a nós nesta missão.
+                </p>
+            </div>
+        </section>
+
+        <!-- 3. Conheça Quem Você Vai Ajudar -->
+        <section class="bg-white py-16 md:py-20">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-extrabold text-gray-800 font-monument uppercase" data-lang-key="meet_title">Conheça Nossos Irmãos</h2>
+                    <p class="mt-2 text-gray-600" data-lang-key="meet_subtitle">Leia as histórias e veja os rostos por trás desta campanha.</p>
+                </div>
+                <div id="profiles-grid" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+                    <!-- Os perfis serão inseridos aqui pelo JavaScript -->
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. Faça Parte Desta História (Doação) -->
+        <section id="doar" class="bg-pbt-purple text-white py-16 md:py-20">
+            <div class="container mx-auto px-6 text-center">
+                <h2 class="text-3xl md:text-4xl font-extrabold font-monument uppercase" data-lang-key="help_title">Como Você Pode Ajudar?</h2>
+                <p class="mt-2 text-indigo-200 max-w-2xl mx-auto" data-lang-key="help_subtitle">Toda ajuda é bem-vinda e fundamental para o sucesso desta missão.</p>
+                
+                <div class="mt-12 max-w-4xl mx-auto grid md:grid-cols-2 gap-8 text-left">
+                    <!-- Coluna da Doação PIX -->
+                    <div class="bg-white text-gray-800 p-8 rounded-lg shadow-2xl">
+                        <h3 class="text-2xl font-bold font-gobold text-center" data-lang-key="pix_title">Doe via PIX</h3>
+                        <p class="mt-2 text-gray-600 text-center" data-lang-key="pix_subtitle">Oferte qualquer valor de forma rápida e segura.</p>
+                        <div class="mt-4 bg-gray-100 p-4 rounded-lg border-2 border-dashed border-pbt-green">
+                            <span id="pix-key" class="text-lg font-mono tracking-wider block text-center">00.000.000/0001-00</span>
+                        </div>
+                        <button id="copy-pix-btn" class="mt-4 w-full bg-pbt-green text-white font-bold py-3 px-6 rounded-lg hover:bg-pbt-green-dark transition-colors duration-300 font-gobold" data-lang-key="pix_button">
+                            Copiar Chave PIX
+                        </button>
+                    </div>
+
+                    <!-- Coluna de Outras Formas de Ajudar -->
+                    <div class="bg-pbt-purple-darker/50 p-8 rounded-lg">
+                        <h3 class="text-2xl font-bold font-gobold text-center" data-lang-key="other_help_title">Outras Formas de Ajudar</h3>
+                        <ul class="mt-4 space-y-4">
+                            <li class="flex items-start">
+                                <span class="text-pbt-green font-bold mr-3">✓</span>
+                                <span data-lang-key="other_help_p1"><strong class="font-gobold">Divulgando:</strong> Partilhe esta página com amigos e familiares. A sua voz amplifica a nossa missão.</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-pbt-green font-bold mr-3">✓</span>
+                                <span data-lang-key="other_help_p2"><strong class="font-gobold">Orando:</strong> Interceda por este projeto, pelos adolescentes e líderes. A oração é o nosso sustento.</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Rodapé -->
+    <footer class="bg-gray-800 text-white">
+        <div class="container mx-auto px-6 py-8 text-center">
+            
+            <div class="flex justify-center items-center space-x-6 mb-8">
+                <a href="#" class="logo1">
+                    <img src="media/icons8-instagram-50.png" alt="Logo Instagram">
+                </a>
+                <a href="#" class="logo2">
+                    <img src="media/logo_obt_white.png" alt="Logo Plano B Teen">
+                </a>
+                <a href="#" class="logo3">
+                    <img src="media/ipc.png" alt="Logo Igreja Presbiteriana de Candeias">
+                </a>
+            </div>
+
+            <p class="text-sm text-gray-500">&copy; 2025 Igreja Presbiteriana de Candeias. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- Modal para Histórias -->
+    <div id="story-modal" class="modal-overlay fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center p-4 z-50 opacity-0 pointer-events-none">
+        <div class="modal-content bg-white rounded-lg shadow-xl max-w-2xl w-full max-h-[90vh] overflow-y-auto transform scale-95">
+            <div class="sticky top-0 bg-white p-4 border-b flex justify-between items-center">
+                <h3 id="modal-title" class="text-2xl font-bold text-pbt-purple font-gobold"></h3>
+                <button id="close-modal-btn" class="text-gray-500 hover:text-gray-800 text-3xl leading-none">&times;</button>
+            </div>
+            <div class="p-6 md:p-8">
+                <img id="modal-image" src="" alt="Foto do Jovem" class="w-48 h-48 object-contain bg-pbt-purple-light rounded-lg float-left mr-6 mb-4">
+                <p id="modal-story" class="text-gray-700 whitespace-pre-wrap"></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Toast de Notificação -->
+    <div id="toast" class="fixed bottom-5 right-5 bg-pbt-green text-white py-2 px-5 rounded-lg shadow-xl opacity-0 transition-opacity duration-300 font-gobold">
+      Chave PIX copiada!
+    </div>
+
+    <!-- Link para o seu ficheiro JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
